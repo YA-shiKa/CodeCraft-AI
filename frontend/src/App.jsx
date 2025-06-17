@@ -32,15 +32,15 @@ const App = () => {
       <div className="bg-gray-900 p-6 rounded-xl shadow-lg w-full max-w-3xl">
         <label className="block mb-2 text-sm">Select Language</label>
         <select
-          className="w-full p-2 mb-4 rounded bg-gray-800 border border-gray-700"
+          className="w-full py-2 px-3 mb-4 rounded bg-gray-800 border border-gray-700 text-white text-base"
           value={language}
           onChange={(e) => setLanguage(e.target.value)}
         >
-          <option value="python">Python</option>
-          <option value="javascript">JavaScript</option>
-          <option value="java">Java</option>
-          <option value="c++">C++</option>
-          <option value="c#">C#</option>
+          <option value="python" style={{ fontSize: '16px', padding: '10px' }}>Python</option>
+          <option value="javascript" style={{ fontSize: '16px', padding: '10px' }}>JavaScript</option>
+          <option value="java" style={{ fontSize: '16px', padding: '10px' }}>Java</option>
+          <option value="c++" style={{ fontSize: '16px', padding: '10px' }}>C++</option>
+          <option value="c#" style={{ fontSize: '16px', padding: '10px' }}>C#</option>
         </select>
 
         <label className="block mb-2 text-sm">Describe your task</label>
